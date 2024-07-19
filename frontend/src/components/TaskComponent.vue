@@ -84,7 +84,7 @@ export default defineComponent({
     })
 
     const descriptionFormatted = computed(() => {
-      return props.task.description.length < 100 ? props.task.description : props.task.description.substring(0, 100) + '...'
+      return props.task.description.length < 95 ? props.task.description : props.task.description.substring(0, 95) + '...'
     })
 
     const hourFormatted = computed(() => {
@@ -126,6 +126,7 @@ export default defineComponent({
     height: 42px;
     font-weight: 500;
     word-break: break-word;
+    overflow: hidden;
   }
   .time {
     font-size: 12px;
