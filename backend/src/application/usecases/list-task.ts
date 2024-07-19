@@ -1,4 +1,4 @@
-import { Task, TaskProps } from "../../domain/entities/task"
+import { Task } from "../../domain/entities/task"
 import { TaskRepository } from "../repository/TaskRepository"
 
 

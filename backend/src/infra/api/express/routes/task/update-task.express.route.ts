@@ -1,6 +1,5 @@
 import { Request, Response } from "express"
 import { HttpMethod, Route } from "../route"
-import { TaskProps } from "../../../../../domain/entities/task"
 import { UpdateTaskRequest, UpdateTaskResponse, UpdateTaskUseCase } from "../../../../../application/usecases/update-task"
 
 export type UpdateTaskResponseDto = {

@@ -1,6 +1,5 @@
 import { Request, Response } from "express"
 import { HttpMethod, Route } from "../route"
-import { TaskProps } from "../../../../../domain/entities/task"
 import { CreateTaskRequest, CreateTaskResponse, CreateTaskUseCase } from "../../../../../application/usecases/create-task"
 
 export type CreateTaskResponseDto = {
@@ -37,7 +36,6 @@ export class CreateTaskRoute implements Route{
     public getHandler() {
         return async (request: Request, response: Response) => {
 
-            console.log(request?.body)
             const input: CreateTaskRequest = {
                 title: request?.body.title,
                 description: request?.body.description,
